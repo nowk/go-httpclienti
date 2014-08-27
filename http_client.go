@@ -4,9 +4,8 @@ import "io"
 import "net/http"
 import "net/url"
 
-// HttpClient an http.Client interface
-
-type HttpClient interface {
+// HTTPClient an http.Client interface
+type HTTPClient interface {
 	Do(*http.Request) (*http.Response, error)
 	Get(string) (*http.Response, error)
 	Head(string) (*http.Response, error)
